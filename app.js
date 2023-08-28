@@ -11,6 +11,9 @@ app.use(express.json());
 const compRoutes = require("./routes/companies")
 app.use("/companies", compRoutes)
 
+const indRoutes = require("./routes/industries")
+app.use("/industries", indRoutes)
+
 const invoiceRoutes = require("./routes/invoices")
 app.use("/invoices", invoiceRoutes)
 
